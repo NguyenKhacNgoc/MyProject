@@ -51,8 +51,8 @@ public class mActivityAdapter extends BaseAdapter {
 
             viewHolder.tvTittle = convertView.findViewById(R.id.tvTittle);
             viewHolder.tvText = convertView.findViewById(R.id.tvText);
-            viewHolder.imageviewRemove = convertView.findViewById(R.id.imageviewRemove);
-            viewHolder.imageviewRepair = convertView.findViewById(R.id.imageviewRepair);
+            viewHolder.imageviewRemove = convertView.findViewById(R.id.btnxoa);
+            viewHolder.imageviewRepair = convertView.findViewById(R.id.btnsua);
             convertView.setTag(viewHolder);
         } else {
             viewHolder = (ViewHolder) convertView.getTag();

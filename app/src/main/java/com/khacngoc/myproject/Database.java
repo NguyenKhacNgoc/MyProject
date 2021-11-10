@@ -10,12 +10,12 @@ public class Database extends SQLiteOpenHelper {
         super(context, name, factory, version);
     }
 
-    public void QuerryData(String sql){
+    public void QuerryData(String sql) {
         SQLiteDatabase database = getWritableDatabase();
         database.execSQL(sql);
     }
 
-    public Cursor GetData(String sql){
+    public Cursor GetData(String sql) {
         SQLiteDatabase database = getReadableDatabase();
         return database.rawQuery(sql, null);
     }
@@ -29,3 +29,4 @@ public class Database extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
     }
+}
