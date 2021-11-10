@@ -3,14 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/android/MyProject/app/src/main/res/drawable/button_custom_add.xml" value="0.2203125" />
+        <entry key="..\:/android/MyProject/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2203125" />
         <entry key="..\:/android/MyProject/app/src/main/res/layout/activity_account.xml" value="0.20416666666666666" />
         <entry key="..\:/android/MyProject/app/src/main/res/layout/activity_add.xml" value="0.20416666666666666" />
         <entry key="..\:/android/MyProject/app/src/main/res/layout/activity_banner.xml" value="0.20416666666666666" />
         <entry key="..\:/android/MyProject/app/src/main/res/layout/activity_list.xml" value="0.20416666666666666" />
-        <entry key="..\:/android/MyProject/app/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
+        <entry key="..\:/android/MyProject/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/android/MyProject/app/src/main/res/layout/activity_rewarded_ads.xml" value="0.20416666666666666" />
         <entry key="..\:/android/MyProject/app/src/main/res/layout/activity_settings.xml" value="0.20416666666666666" />
         <entry key="..\:/android/MyProject/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
+        <entry key="..\:/android/MyProject/app/src/main/res/layout/cc.xml" value="1.225" />
         <entry key="..\:/android/MyProject/app/src/main/res/layout/native_small_template.xml" value="0.20416666666666666" />
         <entry key="..\:/android/MyProject/app/src/main/res/menu/menu.xml" value="0.20416666666666666" />
         <entry key="..\:/android/MyProject/app/src/main/res/menu/menu_demo.xml" value="0.20416666666666666" />
