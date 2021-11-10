@@ -34,3 +34,5 @@
 -keep interface com.huawei.hms.ads.** {*; }
 
 
+
+
