@@ -12,6 +12,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -60,7 +61,6 @@ public class MainActivity extends AppCompatActivity {
         initDatabase();
         buttonClickAdd();
         getDatabase();
-        Btnsetting();
 
     }
     private void insertDabase() {
@@ -134,22 +134,11 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if(item.getItemId() == R.id.menuSetting){
-
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
-    public void Btnsetting()
-    {
-        btnsetting = (ImageButton) findViewById(R.id.btnsetting);
-        btnsetting.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+            if(item.getItemId() == R.id.menuSetting){
                 Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
                 startActivity(intent);
             }
-        });
+        return super.onOptionsItemSelected(item);
     }
 
 }
