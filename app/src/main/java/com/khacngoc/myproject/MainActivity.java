@@ -16,6 +16,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     mActivityAdapter adapter;
     String tittle,text;
     Database database;
+    ImageButton btnsetting;
     private final ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
             new ActivityResultCallback<ActivityResult>() {
@@ -58,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
         initDatabase();
         buttonClickAdd();
         getDatabase();
+        Btnsetting();
 
     }
     private void insertDabase() {
@@ -137,6 +140,17 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    public void Btnsetting()
+    {
+        btnsetting = (ImageButton) findViewById(R.id.btnsetting);
+        btnsetting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
 
 
 }
