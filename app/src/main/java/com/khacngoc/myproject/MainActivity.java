@@ -1,6 +1,6 @@
 package com.khacngoc.myproject;
 
-import androidx.activity.result.ActivityResult;
+import  androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
@@ -11,8 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
-import android.os.Bundle;
-import android.util.Log;
+import android.os.Bundle;;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -23,7 +22,9 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+
 public class MainActivity extends AppCompatActivity {
+
     ArrayList<mActivity> arrayList;
     ListView listView;
     Button btnAdd;
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     String tittle,text;
     Database database;
     ImageButton btnsetting;
+
     private final ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
             new ActivityResultCallback<ActivityResult>() {
@@ -50,10 +52,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
             });
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getViews();
@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
         getDatabase();
 
     }
+
     private void insertDabase() {
         database.QuerryData("INSERT INTO CongViec VALUES(null, '"+ tittle +"', '"+ text +"')");
     }
@@ -134,11 +135,13 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-            if(item.getItemId() == R.id.menuSetting){
-                Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
-                startActivity(intent);
-            }
+        if(item.getItemId() == R.id.btnsetting){
+            Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+            startActivity(intent);
+
+        }
         return super.onOptionsItemSelected(item);
     }
 
-}
+    }
+

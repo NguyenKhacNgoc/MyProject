@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#BBEFF6"
+
     >
 
     <ListView
@@ -17,6 +18,8 @@
         app:layout_constraintVertical_bias="0.436" />
 
     <Button
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
         android:textColor="@color/black"
         android:backgroundTint="#FF5722"
         android:textSize="55sp"
@@ -32,16 +35,4 @@
         app:layout_constraintTop_toBottomOf="@+id/listView"
         app:layout_constraintVertical_bias="0.653" />
 
-<!--    <ImageButton-->
-<!--        android:id="@+id/btnsetting"-->
-<!--        android:layout_width="67dp"-->
-<!--        android:layout_height="54dp"-->
-<!--        android:background="@null"-->
-<!--        android:scaleType="fitXY"-->
-<!--        app:layout_constraintBottom_toTopOf="@+id/listView"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.954"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:srcCompat="@drawable/ic_menu_setting" />-->
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

@@ -1,17 +1,29 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#BBEFF6">
+    <Button
+        android:id="@+id/signin"
+        android:backgroundTint="#FF9800"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signin"
+        />
+    <Button
+        android:backgroundTint="#FF9800"
+        android:textColor="@color/black"
+        android:id="@+id/ads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ads"
+        android:layout_below="@+id/signin"/>
+
     <FrameLayout
         android:id="@+id/btnsettings"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         >
-        <Button
-            android:id="@+id/signin"
-            android:backgroundTint="#FF9800"
-            android:textColor="@color/black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Signin" />
     </FrameLayout>
-</LinearLayout>
+    </LinearLayout>

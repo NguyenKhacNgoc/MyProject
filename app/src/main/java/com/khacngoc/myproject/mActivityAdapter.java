@@ -4,6 +4,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import java.util.List;
@@ -35,7 +37,7 @@ public class mActivityAdapter extends BaseAdapter {
     }
 
     private class ViewHolder {
-        ImageView imageviewRemove, imageviewRepair;
+        ImageButton btnxoa, btnsua;
         TextView tvTittle, tvText;
     }
 
@@ -51,8 +53,8 @@ public class mActivityAdapter extends BaseAdapter {
 
             viewHolder.tvTittle = convertView.findViewById(R.id.tvTittle);
             viewHolder.tvText = convertView.findViewById(R.id.tvText);
-            viewHolder.imageviewRemove = convertView.findViewById(R.id.btnxoa);
-            viewHolder.imageviewRepair = convertView.findViewById(R.id.btnsua);
+            viewHolder.btnxoa = convertView.findViewById(R.id.btnxoa);
+            viewHolder.btnsua = convertView.findViewById(R.id.btnsua);
             convertView.setTag(viewHolder);
         } else {
             viewHolder = (ViewHolder) convertView.getTag();
@@ -63,7 +65,7 @@ public class mActivityAdapter extends BaseAdapter {
         viewHolder.tvTittle.setText(mActivities.getTittle());
         viewHolder.tvText.setText(mActivities.getText());
 
-        viewHolder.imageviewRemove.setOnClickListener(new View.OnClickListener() {
+        viewHolder.btnxoa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 context.XoaCongViec(mActivities.getTittle(), mActivities.getId());
