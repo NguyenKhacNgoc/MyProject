@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#DCF4FF">
+    <TextView
+        android:text="Sửa công việc"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:id="@+id/txtSua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:hint="Tittle"
+        android:layout_below="@+id/txtSua"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/edtsuaTittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:id="@+id/edtsuaText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtsuaTittle"
+        android:hint="Text"
+        android:inputType="text" />
+    <Button
+        android:backgroundTint="#FF9800"
+        android:text="Lưu"
+        android:textColor="@color/black"
+        android:id="@+id/btnluu"
+        android:layout_below="@+id/edtsuaText"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="80dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:backgroundTint="#FF9800"
+        android:text="Huỷ"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/edtsuaText"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@+id/btnluu"
+        android:layout_marginLeft="80dp"
+        android:id="@+id/btnhuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

@@ -8,6 +8,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
@@ -15,7 +16,9 @@ import android.os.Bundle;;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -27,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
     ArrayList<mActivity> arrayList;
     ListView listView;
-    Button btnAdd;
+    ImageButton btnAdd;
     mActivityAdapter adapter;
     String tittle,text;
     Database database;
@@ -124,6 +127,38 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         alertDialog.show();
+    }
+    public void SuaCongViec (String tittle, String text, int id)
+    {
+        Dialog dialog = new Dialog(this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.dialog_suacongviec);
+        EditText suaTittle = (EditText) dialog.findViewById(R.id.edtsuaTittle);
+        EditText suaText = (EditText) dialog.findViewById(R.id.edtsuaText);
+        Button btnluu = (Button) dialog.findViewById(R.id.btnluu);
+        Button btnhuy = (Button) dialog.findViewById(R.id.btnhuy);
+        suaTittle.setText(tittle);
+        suaText.setText(text);
+        btnhuy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+        btnluu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String tittleMoi = suaTittle.getText().toString().trim();
+                String textMoi = suaText.getText().toString().trim();
+                database.QuerryData("UPDATE CongViec SET tieuDeCV = '"+ tittleMoi+"' , tenCV = '"+ textMoi +"' WHERE Id = '"+ id +"'");
+                Toast.makeText(MainActivity.this, "Đã sửa", Toast.LENGTH_SHORT).show();
+                dialog.dismiss();
+                getDatabase();
+
+            }
+        });
+        dialog.show();
+
     }
 
     @Override

@@ -71,6 +71,12 @@ public class mActivityAdapter extends BaseAdapter {
                 context.XoaCongViec(mActivities.getTittle(), mActivities.getId());
             }
         });
+        viewHolder.btnsua.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                context.SuaCongViec(mActivities.getTittle(), mActivities.getText(), mActivities.getId());
+            }
+        });
 
         return convertView;
     }

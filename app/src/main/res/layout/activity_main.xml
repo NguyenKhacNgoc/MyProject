@@ -16,23 +16,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.436" />
-
-    <Button
+    <ImageButton
+        android:id="@+id/btnAdd"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:scaleType="fitXY"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:textColor="@color/black"
-        android:backgroundTint="#FF5722"
-        android:textSize="55sp"
-        android:id="@+id/btnAdd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="+"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.908"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listView"
-        app:layout_constraintVertical_bias="0.653" />
+        android:src="@drawable/add_ic" />
 
 </RelativeLayout>

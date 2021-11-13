@@ -5,43 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#BBEFF6"
+    android:padding="10dp"
     >
-
-    <Button
+    <TextView
+        android:text="Thêm công việc"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="10dp"
         android:textColor="@color/black"
-        android:backgroundTint="#FF9800"
-        android:id="@+id/btnSave"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:text="Thêm"
-        android:textSize="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.125"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.951" />
-
-    <Button
-        android:backgroundTint="#FF9800"
-        android:textColor="@color/black"
-        android:id="@+id/btnCancel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:text="Hủy"
-        android:textSize="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.894"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.951" />
+        android:id="@+id/txtThem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
     <EditText
+        android:layout_below="@+id/txtThem"
         android:id="@+id/edtTittle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -65,6 +43,34 @@
         app:layout_constraintTop_toBottomOf="@+id/edtTittle"
         app:layout_constraintVertical_bias="0.0"
         tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="60dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#FF9800"
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtText"
+        android:text="Thêm"
+        android:textSize="20sp"
+         />
+
+    <Button
+        android:layout_toRightOf="@+id/btnSave"
+        android:layout_below="@+id/edtText"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="60dp"
+        android:backgroundTint="#FF9800"
+        android:textColor="@color/black"
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hủy"
+        android:textSize="20sp" />
+
+
 
 
 </RelativeLayout>

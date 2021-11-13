@@ -22,23 +22,22 @@
         android:text="Text" />
 
     <ImageButton
-        android:background="@null"
         android:id="@+id/btnsua"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="16dp"
+        android:layout_marginRight="10dp"
+        android:background="@null"
         android:scaleType="fitXY"
         android:src="@drawable/repair_ic" />
 
     <ImageButton
-        android:background="@null"
         android:id="@+id/btnxoa"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginRight="22dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginRight="10dp"
         android:layout_toLeftOf="@+id/btnsua"
-
+        android:background="@null"
         android:scaleType="fitXY"
         android:src="@drawable/remove_ic" />
 
