@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <EditText
-        android:hint="Tittle"
+        android:hint="Tiêu đề"
         android:layout_below="@+id/txtSua"
         android:padding="10dp"
         android:layout_marginTop="10dp"
@@ -29,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/edtsuaTittle"
-        android:hint="Text"
+        android:hint="Nội dung"
         android:inputType="text" />
     <Button
         android:backgroundTint="#FF9800"
