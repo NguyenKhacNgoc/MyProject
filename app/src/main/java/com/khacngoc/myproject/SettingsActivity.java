@@ -11,13 +11,12 @@ import androidx.preference.PreferenceFragmentCompat;
 
 public class SettingsActivity extends AppCompatActivity {
     Button signin;
-    Button ads;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
         Signin();
-        Ads();
+
         }
     public void Signin ()
     {
@@ -32,17 +31,7 @@ public class SettingsActivity extends AppCompatActivity {
         });
 
     }
-    public void Ads ()
-    {
-        ads = (Button) findViewById(R.id.ads);
-        ads.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(SettingsActivity.this, BannerActivity.class);
-                startActivity(intent);
-            }
-        });
-    }
+
 
 
 

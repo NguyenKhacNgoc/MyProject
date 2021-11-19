@@ -64,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
         initDatabase();
         buttonClickAdd();
         getDatabase();
+        Ads();
+
 
     }
 
@@ -176,6 +178,11 @@ public class MainActivity extends AppCompatActivity {
 
         }
         return super.onOptionsItemSelected(item);
+    }
+    public void Ads ()
+    {
+        Intent intent = new Intent(MainActivity.this, BannerActivity.class);
+        startActivity(intent);
     }
 
     }
