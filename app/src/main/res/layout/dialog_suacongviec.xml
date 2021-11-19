@@ -31,29 +31,31 @@
         android:layout_below="@+id/edtsuaTittle"
         android:hint="Nội dung"
         android:inputType="text" />
+
     <Button
+        android:id="@+id/btnluu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtsuaText"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="40dp"
         android:backgroundTint="#FF9800"
         android:text="Lưu"
         android:textColor="@color/black"
-        android:id="@+id/btnluu"
-        android:layout_below="@+id/edtsuaText"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="80dp"
-        android:textSize="20sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:textSize="20sp" />
+
     <Button
-        android:backgroundTint="#FF9800"
-        android:text="Huỷ"
-        android:textSize="20sp"
-        android:textColor="@color/black"
-        android:layout_below="@+id/edtsuaText"
-        android:layout_marginTop="40dp"
-        android:layout_toRightOf="@+id/btnluu"
-        android:layout_marginLeft="80dp"
         android:id="@+id/btnhuy"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtsuaText"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@+id/btnluu"
+        android:backgroundTint="#FF9800"
+        android:text="Huỷ"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
 
 </RelativeLayout>
